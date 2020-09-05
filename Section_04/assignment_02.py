@@ -18,7 +18,8 @@ Example:
 """
 
 def pay_extra(working, hour):
-    return (working and (hour < 8 or hour > 20))
+    return (working and (hour<8 or hour>20))
+pay_extra(True, 7)
 
 
 
