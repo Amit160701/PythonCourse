@@ -10,23 +10,14 @@ in the list is a 6. The list length may be less than 4.
 first3([1, 2, 6, 3, 4]) → True
 first3([1, 2, 3, 4, 6]) → False
 first3([1, 2, 3, 4, 5]) → False
-
 """
-
-def first3(numbers):
-
-    end = len(numbers)
-
-    if end > 4:
-        end = 4
-
-    for i in range(end): # loop over index 0,1,2,3
-        if numbers[i] == 6:
+def find_num(list):
+    for i in range(0,4):
+        if list[i]==6:
             return True
-
-    # if we get here, the loop is over and we didn't find a 6
     return False
 
+ 
 
 print(first3([1,2,6,3,0,0])) # true
 print(first3([1,2,3,3,0,6])) # false
